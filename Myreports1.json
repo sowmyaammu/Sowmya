@@ -1,0 +1,93 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-04T08:11:18.136Z",
+        "line": 5,
+        "name": "Title of your scenario outline",
+        "description": "",
+        "id": "this-is-login-functionality;title-of-your-scenario-outline",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 985900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User in home page",
+            "match": {
+              "location": "secondclass.user_in_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 2, Size: 2\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat java.util.Collections$UnmodifiableList.get(Unknown Source)\r\n\tat outline.secondclass.user_enters_credentials(secondclass.java:25)\r\n\tat ✽.user enters credentials(classpath:outline/Outline.feature:7)\r\n",
+              "duration": 3036499,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user enters credentials",
+            "match": {
+              "location": "secondclass.user_enters_credentials(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "Sowmya",
+                  "5233"
+                ]
+              },
+              {
+                "cells": [
+                  "Vidhya",
+                  "7234"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46401,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "click on login button",
+            "match": {
+              "location": "secondclass.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19500,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "homepage is displayed",
+            "match": {
+              "location": "secondclass.homepage_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This is login functionality",
+    "description": " This is for login",
+    "id": "this-is-login-functionality",
+    "keyword": "Feature",
+    "uri": "classpath:outline/Outline.feature",
+    "tags": []
+  }
+]]
